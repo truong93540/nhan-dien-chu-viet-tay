@@ -14,7 +14,7 @@ word_dict = {0:'A',1:'B',2:'C',3:'D',4:'E',5:'F',6:'G',7:'H',8:'I',9:'J',10:'K',
 
 def predict_image(img):
     img = cv2.flip(img, 1)    # Lật ảnh theo trục dọc (chiều gương)
-    img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # Xoay ảnh 90 độ theo chiều kim đồng hồ và lật gương
+    img = cv2.rotate(img, cv2.ROTATE_90_COUNTERCLOCKWISE) # Xoay ảnh 90 độ theo chiều kim đồng hồ
 
     # Chuyển đổi ảnh và dự đoán chữ
     img_copy = img.copy()
